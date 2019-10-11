@@ -1,0 +1,9 @@
+{
+  "packages": ["src/api/**"],
+  "version": "0.0.1",
+  "command": {
+    "publish": {
+      "allowBranch": "master"
+    }
+  }
+}

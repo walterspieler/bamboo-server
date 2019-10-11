@@ -1,0 +1,22 @@
+{
+  "name": "@bamboo/core",
+  "version": "0.0.1",
+  "description": "Bamboo Insurance API",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "author": "Matthieu Walterspieler",
+  "license": "ISC",
+  "dependencies": {
+    "restify": "^8.4.0",
+    "restify-errors": "^8.0.1",
+    "restify-plugins": "^1.6.0"
+  },
+  "devDependencies": {
+    "lerna": "^3.17.0"
+  },
+  "workspaces": [
+    "packages/*"
+  ]
+}
