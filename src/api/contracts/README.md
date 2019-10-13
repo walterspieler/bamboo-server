@@ -1,11 +1,22 @@
-# `contracts`
+# `Contracts`
 
-> TODO: description
+> Contracts Endpoints microservice.
 
 ## Usage
 
-```
-const contracts = require('contracts');
+`[POST]` /contracts
+> Header required authorization : Valid jwt
+Body: `{contract: Contract}`
+Output: `contract._id`
 
-// TODO: DEMONSTRATE API
-```
+`[GET]` /contracts/:id
+> Header required authorization : Valid jwt
+Output: `Contract`
+
+`[PUT]` /contracts/:id
+> Header required authorization : Valid jwt
+Body: {contract: Contract}
+Output: `Contract`
+
+`[DELETE]`/contracts/:id
+> Header required authorization : Valid jwt with Admin rights
