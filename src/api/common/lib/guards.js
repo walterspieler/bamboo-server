@@ -8,7 +8,7 @@ class AuthGuard {
     }
     const token = authHeader.replace('Bearer ', '').trim();
     new Promise(resolve => {
-      jwt.verify(token, env.jwt_secret, (err, decoded) => {
+      jwt.verify(token, env.jwt_secret, (err) => {
         if (err) {
           return resolve(false);
         }

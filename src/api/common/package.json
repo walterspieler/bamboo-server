@@ -17,7 +17,8 @@
     "access": "public"
   },
   "scripts": {
-    "test": "echo \"Error: run tests from root\" && exit 1"
+    "serve": "node main.js",
+    "serve:dev": "nodemon main.js"
   },
   "devDependencies": {
     "@types/restify-errors": "^4.3.3",

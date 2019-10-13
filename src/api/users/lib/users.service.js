@@ -74,13 +74,13 @@ class UsersService {
   }
   async log2FA(id, otp) {
     const user = await User.findById(id);
-    return await new Promise((resolve, reject) => {
+    return await new Promise((resolve) => {
       this.nexmo.verify.check(
         {
           request_id: user.OTP,
           code: otp,
         },
-        (err, result) => {
+        (err) => {
           if (err) {
             throw err;
           }

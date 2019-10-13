@@ -1,5 +1,4 @@
 const ProductsService = require('./products.service');
-const errors = require('restify-errors');
 
 module.exports = {
   async createProduct(req, res, next) {
