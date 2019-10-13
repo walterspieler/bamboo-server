@@ -5,7 +5,7 @@
   "author": "Matt Walterspieler <mwalterspieler@gmail.com>",
   "homepage": "",
   "license": "ISC",
-  "main": "index.js",
+  "main": "main.js",
   "directories": {
     "lib": "lib",
     "test": "__tests__"
@@ -18,5 +18,16 @@
   },
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "devDependencies": {
+    "@types/restify-errors": "^4.3.3",
+    "eslint": "^6.5.1"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "mongodb": "^3.3.2",
+    "mongoose": "^5.7.4",
+    "restify-cors-middleware": "^1.1.1",
+    "restify-errors": "^8.0.1"
   }
 }
