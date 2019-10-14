@@ -12,7 +12,7 @@ const UserSchema = new mongoose.Schema({
     hashMethod: String,
     iterations: Number,
   },
-  OTP: String,
+  OTP: { type: String, default: '' },
   role: { type: String, default: 'user' },
 });
 

@@ -53,11 +53,13 @@ class UsersService {
                 brand: 'BAMBOO',
                 code_length: '4',
               },
-              (err, result) => {
+              async (err, result) => {
                 if (err) {
                   reject(err);
                 }
+                console.log(result.request_id);
                 user.OTP = result.request_id;
+                await user.save();
                 resolve(user._id);
               },
             );
@@ -74,13 +76,13 @@ class UsersService {
   }
   async log2FA(id, otp) {
     const user = await User.findById(id);
-    return await new Promise((resolve) => {
+    return await new Promise(resolve => {
       this.nexmo.verify.check(
         {
           request_id: user.OTP,
           code: otp,
         },
-        (err) => {
+        err => {
           if (err) {
             throw err;
           }
