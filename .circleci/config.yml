@@ -43,7 +43,7 @@ workflows:
   test-and-push:
     jobs:
       - test:
-          context: bamboo-test
+          context: test-bamboo
           filters:
             tags:
               only: /^v.*/
