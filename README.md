@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/walterspieler/bamboo-server.svg?style=svg)](https://circleci.com/gh/walterspieler/bamboo-server)
+
 # BAMBOO API
 
 ## Start servers

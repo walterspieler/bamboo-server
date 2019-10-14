@@ -7,7 +7,7 @@
     "lint": "eslint src/**/*.js --ignore-pattern .eslintignore --fix",
     "start:contracts": "nodemon ./src/api/contracts/main.js",
     "start:products": "nodemon ./src/api/products/main.js",
-    "start:users": "nodemon ./src/api/user/main.js",
+    "start:users": "nodemon ./src/api/users/main.js",
     "test": "jest"
   },
   "author": "Matthieu Walterspieler",
