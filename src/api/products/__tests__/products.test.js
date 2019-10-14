@@ -1,7 +1,7 @@
 'use strict';
 
-const products = require('..');
+const products = require('../main');
 
 describe('products', () => {
-    it('needs tests');
+  it('needs tests', () => {});
 });

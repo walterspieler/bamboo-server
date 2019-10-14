@@ -4,11 +4,11 @@
   "description": "Bamboo Insurance API",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test",
     "lint": "eslint src/**/*.js --ignore-pattern .eslintignore --fix",
     "start:contracts": "nodemon ./src/api/contracts/main.js",
     "start:products": "nodemon ./src/api/products/main.js",
-    "start:users": "nodemon ./src/api/user/main.js"
+    "start:users": "nodemon ./src/api/user/main.js",
+    "test": "jest"
   },
   "author": "Matthieu Walterspieler",
   "license": "ISC",
@@ -21,6 +21,7 @@
     "eslint": "^6.5.1",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0",
     "lerna": "^3.17.0"
   },
   "workspaces": [

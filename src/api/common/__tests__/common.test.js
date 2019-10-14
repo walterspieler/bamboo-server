@@ -3,5 +3,5 @@
 const common = require('..');
 
 describe('@bamboo/common', () => {
-    it('needs tests');
+  it('needs tests', () => {});
 });

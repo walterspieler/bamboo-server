@@ -1,7 +1,7 @@
 'use strict';
 
-const contracts = require('..');
+const contracts = require('../main');
 
 describe('contracts', () => {
-    it('needs tests');
+  it('needs tests', () => {});
 });

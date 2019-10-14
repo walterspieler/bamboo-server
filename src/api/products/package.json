@@ -27,6 +27,7 @@
   "keywords": [],
   "devDependencies": {
     "@types/restify-errors": "^4.3.3",
-    "eslint": "^6.5.1"
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0"
   }
 }
